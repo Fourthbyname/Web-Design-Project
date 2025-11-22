@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Monserrat";
-    src: url(../../Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(../../Main/Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
 html {
@@ -29,28 +29,6 @@ body.fave {
     animation: animate_loadpage 1s ease-in;
 }
 
-/* following animation source: https://www.30secondsofcode.org/css/s/hover-underline-animation/ */
-a {
-  display: inline-block;
-  position: relative;
-}
-a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
-}
 /* navigation bar styles */
 nav.fave {
     position: sticky;
