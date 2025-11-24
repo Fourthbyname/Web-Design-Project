@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Monserrat";
+    src: url(../../Main/Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+html {
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+}
+
+main.ben {
+    width: auto;
+    border: 10px solid #8d99ae;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 25px 65px;
+    margin: 10px 15px;
+    animation: animate_loadpage 1s ease-in;
+}
+body.ben {
+    color: #edf2f4;
+    margin: 25px;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #282a3e;
+    background: linear-gradient(145deg, #333657 0%, #24273f 100%);
+    text-align: center;
+    animation: animate_loadpage 1s ease-in;
+}
+
+/* navigation bar styles */
+nav.ben {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #333;
+    animation: animate_loadpage 1s ease-in;
+}
+
+nav.ben ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+nav.ben a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    background-color: green;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+    margin: 10px 15px;
+    border-radius: 8px;
+}
+nav.ben a:hover {
+    animation: animate_pulse 1s infinite alternate;
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* animations */
+@keyframes animate_pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate_loadpage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
