@@ -2,53 +2,117 @@
 <html lang="en">
 <meta charset="UTF-8">
 
-<head id="Sidney">
-  <title id="Sidney">Jam2 - Metal</title>
+<head class="Sidney">
+  <title class="Sidney">Jam2 - Metal</title>
   <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="icon" type="favicon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap">
 </head>
 
-<body id="Sidney">
-  <section id="Sidney">
-    <h1 id="Sidney">Metal</h1>
-    <img id="Sidney" class="logo" src="images/logo.png" alt="The logo for Jam Two" width="20%" height="20%">
+<body class="Sidney" bgColor="#151515"> <!-- bgColor taken from https://stackoverflow.com/questions/64051702/how-can-i-set-an-elements-background-color-in-an-html-file#:~:text=You%20can%20use%20inline%20CSS,color%20of%20an%20HTML%20element.-->
+
+  <div id="navbar">
+    <a href="#">Home</a>
+    <a href="#">Rap</a>
+    <a href="#">Rock</a>
+    <a href="#">Metal</a>
+    <a href="#">R&B</a>
+  </div>
+  
+  <div>
+    <img class="Sidney logo" src="images/logo.png" alt="The logo for Jam Two" width="15%" height="25%">
     <!--logo made on website: sketch.io/sketchpad/-->
+  </div>
+
+  <section class="Sidney">
+    <h1 class="Sidney">Metal</h1>
+    <img class="Sidney background" src="images/metal_titlebackground.jpg" alt="Background for title" width="100%" height="100%">
   </section>
-  <section id="Sidney">
-    <h2 id="Sidney">About</h2>
-    <p id="Sidney">
+
+  <section class="Sidney content">
+    <h2 id="About" class="Sidney">About</h2>
+    <p class="Sidney">
       Enjoy hearing instruments take the spotlight? Do you like when people pour their energy into their song and performance? <br>
       Well you've chosen the right genre, because metal is where the music takes your focus and transports you to a soundscape of
       heavy drum beats and guitar solos that usher waves of frisson, not to mention lyrics that range from melancholic to gutteral
       screaming. Whichever end of this spectrum you find yourself, we guarantee we'll have something that will scratch that itch!
     </p>
   </section>
-  <section>
-    <h2 id="Sidney">Characteristics</h2>
-    <p id="Sidney">
+
+  <section class="Sidney content">
+    <h2 id="Characteristics" class="Sidney">Characteristics</h2>
+    <p class="Sidney">
       The metal genre is known stereotypically as the genre with angry lyrics, loud drums and too much guitar. Those songs exist of
       course, but it's more in-depth than that. Metal is a genre that musicians and vocalists alike pour their emotions into by the bucket.
       This is done through vocals that are sung with lulls of sadness, anger or love, complimented by guitar riffs that give each song character 
       and backed with drum beats to tie the whole thing together. The most common instrument in metal is electric guitar, almost acting like a 
       second set of vocals for the listener to digest on repeated listenings. These are usually combined with drums to add a noise and unique tempo,
-      followed 
+      followed by a bass to keep the song grounded and consistent.
     </p>
   </section>
-  <div id="Sidney" class="container">
-    <img src="./images/metal_pre1990s.jpg" >
-    <img src="./images/metal_1990stonow.jpg">
-    <img src="./images/metal_top5.jpg">
-    <img src="./images/metal_recommendations.jpg">
+  
+  <div class="Sidney flex-container">
+
+    <div class="Sidney grid-container">
+
+      <div class="Sidney">
+       <a class="Sidney container" href="images/metal_pre1990s.jpg">
+          <div class="Sidney link">Pre-1990s</div>
+          <img class="Sidney link" src="images/metal_pre1990s.jpg" width="250px" height="250px">
+        </a>
+      </div>
+
+      <div class="Sidney">
+        <a class="Sidney link" href="images/metal_1990stonow.jpg">
+          <div class="Sidney link">1990s<br>To Now</div>
+          <img class="Sidney link" src="images/metal_1990stonow.jpg" width="250px" height="250px">
+        </a>
+      </div>
+
+      <div class="Sidney">
+        <a class="Sidney" href="images/metal_top5.jpg">
+          <div class="Sidney link">Top 5<br>Albums<br>&<br>Artists</div>
+          <img class="Sidney link" src="images/metal_top5.jpg" width="250px" height="250px">
+        </a>
+     </div>
+
+      <div class="Sidney">
+        <a class="Sidney" href="images/metal_recommendations.jpg">
+          <div class="Sidney link" style="font-size: 2em;">What<br>We<br>Recommend</be></div>
+         <img class="Sidney link" src="images/metal_recommendations.jpg" width="250px" height="250px">
+        </a>
+      </div>
+
+    </div>
+
   </div>
 
+  <section class="Sidney content">
+    <h2 class="Sidney">Top 5 Songs Right Now!</h2>
+    <div class="Sidney">
+      <ul class="Sidney">
+        <li class="Sidney"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0COqiPhxzoWICwFCS4eZcp?utm_source=generator" width="85%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li class="Sidney"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7snQQk1zcKl8gZ92AnueZW?utm_source=generator" width="85%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li class="Sidney"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2nLtzopw4rPReszdYBJU6h?utm_source=generator" width="85%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li class="Sidney"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1Cj2vqUwlJVG27gJrun92y?utm_source=generator" width="85%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li class="Sidney"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5cZqsjVs6MevCnAkasbEOX?utm_source=generator" width="85%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+      </ul>
+    </div>
+    <a href="https://www.officialcharts.com/charts/rock-and-metal-singles-chart/">Source - Offical Charts</a>
+  </section>
+    
+
+  <footer class="Home">
+    <div class="home">
+      <p class="home footer"> &copy; <a href="https://www.dcu.ie"> Dublin City University 2025-2026</a> &VerticalBar;
+        Comp_Sci_Group_18 &VerticalBar;
+        This Is Student Coursework &VerticalBar;
+        Lecturer: <a href="https://www.computing.dcu.ie/~jkernan/">Jane Kernan</a> &VerticalBar;
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a>
+      </p>
+    </div>
+  </footer>
+  
 </body>
-top 5 vvvvvvvv
-bring me to life - evanescence 
-sweet child o mine - guns n roses 
-numb - linkin park
-the sound of silence - disturbed
-break stuff - limp bizkit
-https://www.officialcharts.com/charts/rock-and-metal-singles-chart/
-</body>
-
-
-
