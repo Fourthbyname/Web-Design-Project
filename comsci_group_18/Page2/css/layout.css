@@ -21,15 +21,6 @@
         padding-top: 3em;
         padding-bottom: 5em;
         font-size: 4rem;
-
-    p {
-        font-family: "Arial", sans-serif;
-        font-style: normal;
-        text-align: center;
-        padding-top: 3em;
-        padding-bottom: 5em;
-        font-size: 2rem;
-    }
     
     #navbar {
         position: -webkit-sticky;
@@ -150,4 +141,5 @@
     }
 
 }
+
 
