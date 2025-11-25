@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Monserrat";
+    src: url(../../Main/Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+html {
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+}
+
+main.Darragh {
+    width: auto;
+    border: 10px solid #8d99ae;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 25px 65px;
+    margin: 10px 15px;
+    animation: animate_loadpage 1s ease-in;
+}
+body.Darragh {
+    color: #edf2f4;
+    margin: 25px;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #282a3e;
+    background: linear-gradient(145deg, #333657 0%, #24273f 100%);
+    text-align: center;
+    animation: animate_loadpage 1s ease-in;
+}
