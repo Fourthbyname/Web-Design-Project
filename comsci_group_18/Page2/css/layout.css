@@ -10,33 +10,35 @@ html {
     font-family: "Monserrat", Arial, Helvetica, sans-serif;
 }
 
+
 body.Ben {
     font-family: "Monserrat", Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background: #833AB4;
-    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     color: white; 
     margin: 0;
+    min-height: 100vh; 
     animation: animate_loadpage 1s ease-in;
 }
 
 h1.Ben, h2.Ben, h3.Ben {
+    font-family: Georgia, serif; 
     text-align: center;
-    color: #e60000;
+    color: white; 
 }
 
+/* Navigation */
 nav.Ben {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Supports both 'Ben' and 'fave' classes used in your HTML files */
 nav.Ben ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #e60000;
+    background-color: #e60000; 
     display: inline-block; 
     border-radius: 20px;
     width: 90%; 
@@ -49,7 +51,7 @@ nav.Ben li {
 
 nav.Ben li a {
     display: block;
-    color: white;
+    color: white; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -57,14 +59,15 @@ nav.Ben li a {
     transition: background-color 0.3s;
 }
 
-nav.Ben li a:hover {
+nav.Ben li a:hover, nav.fave li a:hover {
     background-color: #7a0000;
 }
 
+
 section {
-    background-color: #dbdbdb;
+    background-color: black; 
     text-align: center;
-    color: #000000; 
+    color: white; 
     padding: 20px;
     border: 0px;
     border-radius: 20px;
@@ -75,8 +78,8 @@ section p.Ben {
     text-align: left;
     padding: 10px;
     line-height: 1.6;
+    color: white;
 }
-
 
 img.Ben {
     max-width: 100%;
@@ -84,34 +87,34 @@ img.Ben {
     border-radius: 10px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     display: block;
-    margin: 20px auto; 
+    margin: 20px auto;
 }
 
 img.Ben:hover {
-    box-shadow: 0 0 15px #e60000;
+    box-shadow: 0 0 15px white; 
     transform: scale(1.05);
 }
 
 a {
-    color: #e60000;
+    color: white; 
     font-weight: bold;
-    text-decoration: none;
-}
+    text-decoration: underline; 
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 0.8;
 }
 
 footer.Ben {
     text-align: center;
     padding: 30px;
-    color: #dbdbdb;
+    color: white;
     font-size: 0.9em;
     margin-top: 50px;
 }
 
 footer.Ben a {
-    color: #e60000;
+    color: white;
 }
 
 @keyframes animate_loadpage {
@@ -123,14 +126,12 @@ footer.Ben a {
     section {
         margin: 30px 20px; 
     }
-    nav.Ben ul, nav.fave ul {
+    nav.Ben ul {
         width: 100%;
         border-radius: 0;
     }
-    nav.Ben li, nav.fave li {
+    nav.Ben li {
         display: block; 
         border-bottom: 1px solid #c40000;
     }
 }
-```
-
