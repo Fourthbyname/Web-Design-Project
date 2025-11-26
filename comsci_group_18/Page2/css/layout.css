@@ -28,6 +28,8 @@ h1.Ben {
     color: white;
     margin-top: 20px;
     background: none;
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
 h2.Ben, h3.Ben {
@@ -39,6 +41,10 @@ h2.Ben, h3.Ben {
 header.Ben {
     text-align: center;
     padding: 20px 0;
+}
+
+header.Ben p.Ben {
+    text-align: center;
 }
 
 nav.Ben {
@@ -72,7 +78,7 @@ nav.Ben li a {
     transition: background-color 0.3s;
 }
 
-nav.Ben li a:hover, nav.fave li a:hover {
+nav.Ben li a:hover {
     background-color: #333;
 }
 
@@ -98,10 +104,14 @@ p.Ben, section p.Ben {
 img.Ben {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     display: block;
     margin: 20px auto;
+    background-color: black;
+    padding: 20px; 
+    box-sizing: border-box; 
+    width: auto;
 }
 
 img.Ben:hover {
