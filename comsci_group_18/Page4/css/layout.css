@@ -9,22 +9,184 @@ html {
     font-family: "Monserrat", Arial, Helvetica, sans-serif;
 }
 
-main.Darragh {
+.Darragh-main {
     width: auto;
-    border: 10px solid #8d99ae;
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 25px 65px;
-    margin: 10px 15px;
+    background-color: #171717;
     animation: animate_loadpage 1s ease-in;
 }
-body.Darragh {
-    color: #edf2f4;
-    margin: 25px;
+.Darragh-body {
     font-family: "Monserrat", Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color: #282a3e;
-    background: linear-gradient(145deg, #333657 0%, #24273f 100%);
-    text-align: center;
+    background-color: #171717;
     animation: animate_loadpage 1s ease-in;
+}
+.Darragh-header {
+	text-align: center;
+	color: #e60000;
+}
+.D-about {
+	background-color: #dbdbdb;
+	text-align: center;
+    color: #000000;
+	padding: 10px;
+	border: 0px;
+	border-radius: 20px;
+	margin: 30px 100px 60px 100px;
+}
+.D-char {
+	background-color: #dbdbdb;
+	text-align: center;
+    color: #000000;
+	padding: 10px;
+	border: 0px;
+	border-radius: 20px;
+	margin: 30px 100px 60px 100px;
+}
+.D-lm {
+	background-color: #dbdbdb;
+	text-align: center;
+    color: #000000;
+	padding: 10px;
+	border: 0px;
+	border-radius: 20px;
+	margin: 30px 100px 60px 100px;
+}
+.D-lm ul li {
+  display: inline-block;
+}
+
+.D-lm ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: #e60000;
+  text-decoration: none;
+}
+
+.D-lm ul li a:hover {
+  background-color: #7a0000;
+}
+.D-top5-title {
+	text-align: center;
+}
+.D-top5 {
+	background-color: #dbdbdb;
+	text-align: left;
+    color: #000000;
+	padding: 10px;
+	border: 0px;
+	border-radius: 20px;
+	margin: 30px 100px 60px 100px;
+}
+
+.D-ref {
+	background-color: #dbdbdb;
+    color: #000000;
+	text-align: center;
+	padding: 10px;
+	border: 0px;
+	border-radius: 20px;
+	margin: 30px 100px 60px 100px;
+}
+.Darragh-page-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e60000;
+  text-align: center;
+}
+
+.Darragh-page-nav ul li {
+  display: inline-block;
+}
+
+.Darragh-page-nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Darragh-page-nav ul li a:hover {
+  background-color: #7a0000;
+}
+.D-footer {
+	color: white;
+	background-color: #e60000;
+	padding: 5px
+}
+.D-Pre-1990s {
+    background-color: #dbdbdb;
+    color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 100px 60px 100px;
+    text-align: left;
+}
+
+.D-text-block {
+    margin-bottom: 30px;
+}
+
+.D-bottom-images {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 30px;
+}
+
+.D-bottom-images img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.D-bottom-images img:hover {
+    box-shadow: 0 0 15px #e60000;
+    transform: scale(1.05);
+}
+.D-1990s, .D-2000s, .D-2010s, .D-2020s {
+    background-color: #dbdbdb;
+    color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 100px 60px 100px;
+    text-align: center;
+}
+
+.D-section-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.D-section-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.D-section-image img:hover {
+    box-shadow: 0 0 15px #e60000;
+    transform: scale(1.05);
+}
+.D-2pac, .D-big, .D-jayz, .D-em, .D-ye {
+    background-color: #dbdbdb;
+    color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 100px 60px 100px;
+    text-align: center;
+}
+.D-esdee, .D-drake, .D-jcole, .D-gunna, .D-50 {
+    background-color: #dbdbdb;
+    color: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px 100px 60px 100px;
+    text-align: center;
 }
