@@ -1,145 +1,134 @@
-.Ben {
 
-    body {
-        font-size: 1.5em;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 100%;
-        background: llinear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        color: #fff;
-        overflow-x: hidden;
-        margin-bottom: 20px;
-  }
+@font-face {
+    font-family: "Monserrat";
+    src: url(../../Main/Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
 
-    h1 {
-        font-family: "Georgia", serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        padding-top: 3em;
-        padding-bottom: 5em;
-        font-size: 4rem;
-    
-    #navbar {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        overflow: hidden;
-        background-color: #2a2a2a;
-        z-index: 10;
-    }
+html {
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+}
 
-    #navbar a {
-        float: left;
-        display: block;
-        color: #ededed;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
-        z-index: 10;
-    }
+body.Ben {
+    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #171717;
+    color: white; 
+    margin: 0;
+    animation: animate_loadpage 1s ease-in;
+}
 
-    #navbar a:hover {
-        text-decoration: underline;
-        color: #bababa;
-    }
+h1.Ben, h2.Ben, h3.Ben {
+    text-align: center;
+    color: #e60000;
+}
 
-    h2 {
-        font-size: 2em;
-        font-family: "Georgia", serif;
-        text-align: center;
-    }
+nav.Ben {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    h3 {
-        font-size: 1.5em;
-        font-family: "Georgia", serif;
-        text-align: center;
-    }
-    
-    .content {
-        background: #303030;
-        font-size: 1.25em;
-        padding: 1em;
-        margin: 2em;
-        color: #fefefe;
-        border-top-left-radius: 1.5em;
-        border-top-right-radius: 0.5em;
-        border-bottom-left-radius: 0.5em;
-        border-bottom-right-radius: 1.5em;
-    }
+/* Supports both 'Ben' and 'fave' classes used in your HTML files */
+nav.Ben ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e60000;
+    display: inline-block; 
+    border-radius: 20px;
+    width: 90%; 
+    max-width: 1200px;
+}
 
-    img.logo {
-        position: absolute;
-        top: 2.5em;
-        right: 0px;
-        z-index: -1
-    }
-    
-    img.background {
-        top: 0;
-        position: absolute;
-        z-index: -2;
-    }
+nav.Ben li {
+    display: inline-block;
+}
 
-    .flex-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        background-color: black;
-        padding: 2px;
-    }
+nav.Ben li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Monserrat", Arial, sans-serif;
+    transition: background-color 0.3s;
+}
 
-    .grid-container div {
-        background-color: black;
-        border: 20px solid black;
-        border-radius: 20px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+nav.Ben li a:hover {
+    background-color: #7a0000;
+}
 
-    div.link {
-        font-size: 2em;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        text-align: left;
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        -webkit-text-stroke: 1px white;
-    }
+section {
+    background-color: #dbdbdb;
+    text-align: center;
+    color: #000000; 
+    padding: 20px;
+    border: 0px;
+    border-radius: 20px;
+    margin: 30px 100px 60px 100px; 
+}
 
-    div.link:hover {
-        color: grey;
-        text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
-
-    }
-
-    img.link {
-        border-radius: 20px;
-        z-index: 0;
-    }
-
-    li {
-        font-weight: bold;
-        font-size: 2em;
-        line-height: 2em;
-        text-align: center;
-        list-style: decimal;
-    }
-
-    footer {
-        text-align: center;
-        color: white;
-    }
-
+section p.Ben {
+    text-align: left;
+    padding: 10px;
+    line-height: 1.6;
 }
 
 
+img.Ben {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto; 
+}
+
+img.Ben:hover {
+    box-shadow: 0 0 15px #e60000;
+    transform: scale(1.05);
+}
+
+a {
+    color: #e60000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer.Ben {
+    text-align: center;
+    padding: 30px;
+    color: #dbdbdb;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+footer.Ben a {
+    color: #e60000;
+}
+
+@keyframes animate_loadpage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        margin: 30px 20px; 
+    }
+    nav.Ben ul, nav.fave ul {
+        width: 100%;
+        border-radius: 0;
+    }
+    nav.Ben li, nav.fave li {
+        display: block; 
+        border-bottom: 1px solid #c40000;
+    }
+}
+```
