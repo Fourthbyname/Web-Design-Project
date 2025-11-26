@@ -1,33 +1,40 @@
-
 @font-face {
     font-family: "Monserrat";
     src: url(../../Main/Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
 }
 
 html {
-    box-sizing: content-box;
+    box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    height: 100%;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body.Ben {
     font-family: "Monserrat", Arial, Helvetica, sans-serif;
     font-size: 20px;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    color: white; 
+    color: white;
     margin: 0;
-    min-height: 100vh; 
+    min-height: 100vh;
     animation: animate_loadpage 1s ease-in;
 }
 
 h1.Ben, h2.Ben, h3.Ben {
-    font-family: Georgia, serif; 
+    font-family: Georgia, serif;
     text-align: center;
-    color: white; 
+    color: white;
+    margin-top: 0;
 }
 
-/* Navigation */
+header.Ben {
+    text-align: center;
+    padding: 20px 0;
+}
+
 nav.Ben {
     text-align: center;
     margin-bottom: 20px;
@@ -38,7 +45,7 @@ nav.Ben ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #e60000; 
+    background-color: #e60000;
     display: inline-block; 
     border-radius: 20px;
     width: 90%; 
@@ -51,7 +58,7 @@ nav.Ben li {
 
 nav.Ben li a {
     display: block;
-    color: white; 
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,22 +66,22 @@ nav.Ben li a {
     transition: background-color 0.3s;
 }
 
-nav.Ben li a:hover, nav.fave li a:hover {
+nav.Ben li a:hover {
     background-color: #7a0000;
 }
 
-
-section {
-    background-color: black; 
+section, section.Ben {
+    background-color: black;
     text-align: center;
-    color: white; 
+    color: white;
     padding: 20px;
     border: 0px;
     border-radius: 20px;
-    margin: 30px 100px 60px 100px; 
+    margin: 30px 100px 60px 100px;
+    display: block; 
 }
 
-section p.Ben {
+section p.Ben, p.Ben {
     text-align: left;
     padding: 10px;
     line-height: 1.6;
@@ -91,14 +98,15 @@ img.Ben {
 }
 
 img.Ben:hover {
-    box-shadow: 0 0 15px white; 
+    box-shadow: 0 0 15px white;
     transform: scale(1.05);
 }
 
 a {
-    color: white; 
+    color: white;
     font-weight: bold;
-    text-decoration: underline; 
+    text-decoration: underline;
+}
 
 a:hover {
     text-decoration: none;
@@ -123,15 +131,15 @@ footer.Ben a {
 }
 
 @media screen and (max-width: 800px) {
-    section {
-        margin: 30px 20px; 
+    section, section.Ben {
+        margin: 30px 20px;
     }
     nav.Ben ul {
         width: 100%;
         border-radius: 0;
     }
     nav.Ben li {
-        display: block; 
+        display: block;
         border-bottom: 1px solid #c40000;
     }
 }
