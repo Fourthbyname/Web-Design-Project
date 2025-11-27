@@ -1,45 +1,108 @@
-@font-face {
-    font-family: "Monserrat";
-    src: url(../../Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
-}
-
 html {
     box-sizing: content-box;
     scroll-behavior: smooth;
-    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: animate_loadpage 1s ease-in;
 }
 
-/* Carousel Section Styles */
+body.home {
+    background: linear-gradient(135deg, #69605e, #79726b, #332f2a)
+}
+
+/* header */
+header.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;   
+    background-color: #f0f0f0;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header.home h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+header.home p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+header.home img {
+    width: 120px;
+    height: auto;
+}
+
+
+/* about section */
+.about {
+    max-width: 98%;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: animate_loadpage 1s ease-in;
+    background-color: #f0f0f0;
+}
+.home.par {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+
+}
+.home.lis {
+    list-style:square;
+    padding-left: 15px;
+    font-size: 1.3rem;
+    font-weight: 1000;
+    text-align: center;
+}
+
+
+
+
+/* carousel style */
 .carousel-img {
-  height: 550px;
-  object-fit: cover;
-  filter: brightness(70%);
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(70%);
 }
-/* Caption Style */
 .custom-caption {
-  bottom: 20%;
+    bottom: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    fill-opacity: 10%;
+    border-radius: 20px;
 }
-
 .slide-title {
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-
 .slide-author {
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .slide-tagline {
-  font-size: 1.2rem;
-  font-style: italic;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 /* Contributions Section Styles */
-/* Section wrapper */
 .contribution_section {
     max-width: 90%;
     margin: 40px auto;
@@ -47,26 +110,27 @@ html {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    animation: animate_loadpage 2s ease-in;
+    background-color: #f0f0f0;
 }
-/* Title banner */
 .contribution_title_banner {
     text-align: center;
-    background: #1f2937; /* dark grey */
+    background: #1f2937;
     color: white;
     padding: 18px 0;
     border-radius: 12px;
     margin-bottom: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-
 .contribution_title_banner h2 {
     margin: 0;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
-/* Contribution cards */
 .contribution_card {
     display: flex;
     justify-content: space-between;
@@ -76,75 +140,102 @@ html {
     padding: 22px 28px;
     background: #fafafa;
     border-radius: 14px;
-    border: 25px solid #ccc;
+    border: 15px solid #ccc;
 
     transition: 
         transform 0.25s ease,
         border-color 0.25s ease;
 }
-/* Hover animation */
 .contribution_card:hover {
     transform: translateY(-6px);
 }
-/* Border glows on hover */
 .border-blue:hover  { border-color: #60a5fa; }
 .border-green:hover { border-color: #4ade80; }
 .border-red:hover   { border-color: #f87171; }
 .border-purple:hover{ border-color: #c084fc; }
-/* Text */
+.border-blue { border-color: #3b82f6; }
+.border-green { border-color: #22c55e; }
+.border-red { border-color: #ef4444; }
+.border-purple { border-color: #a855f7; }
 .contribution_text h3 {
     margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
 }
-
 .contribution_text p {
     margin: 8px 0 0;
     font-size: 1rem;
     color: #555;
 }
-
 .contribution_text p.rc {
     margin: 8px 0 0;
     font-size: 1rem;
     color: #000000;
 }
-/* Image */
 .contribution_image img {
     width: 160px;
     height: auto;
     border-radius: 12px;
+    border: 10px solid #ffffff;
     object-fit: cover;
 }
-/* Border color classes */
-.border-blue { border-color: #3b82f6; }
-.border-green { border-color: #22c55e; }
-.border-red { border-color: #ef4444; }
-.border-purple { border-color: #a855f7; }
-/* Responsive */
-@media (max-width: 700px) {
-    .contribution_card {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .contribution_image img {
-        width: 60%;
-        max-width: 200px;
-    }
+
+
+
+/* hardships section styles */
+.hardships {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: animate_loadpage 1s ease-in;
+    background-color: #f0f0f0;
 }
+.hardships ul {
+    list-style: none;
+    padding-left: 20px;
+}
+.hardships ul li {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.hardships ul li h5 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.hardships ul li p {
+    text-align: center;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 20
+    px;
+}
+
+
 
 /* contact form styles */
 .home_contact {
     max-width: 90%;
     margin: auto;
     padding: 20px;
-    border: 2px solid #8d99ae;
     border-radius: 15px;
-    background-color: #f0f0f0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: animate_loadpage 1s ease-in;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
 }
-
 .home_contact input[type=text], .home_contact select {
     width: 100%;
     padding: 12px 20px;
@@ -155,7 +246,6 @@ html {
     box-sizing: border-box;
     font-size: 1rem;
 }
-
 .home_contact input[type=email], .home_contact select {
     width: 100%;
     padding: 12px 20px;
@@ -166,7 +256,6 @@ html {
     box-sizing: border-box;
     font-size: 1rem;
 }
-
 .home_contact input[type=tel], .home_contact select {
     width: 100%;
     padding: 12px 20px;
@@ -177,7 +266,6 @@ html {
     box-sizing: border-box;
     font-size: 1rem;
 }
-
 .contact_form textarea {
     width: 100%;
     height: auto;
@@ -193,7 +281,6 @@ html {
     margin-top: 6px;
     margin-bottom: 16px;
 }
-
 input[type=submit] {
     width: 100%;
     background-color: #04AA6D;
@@ -202,11 +289,49 @@ input[type=submit] {
     border: 2px solid #009639;
     border-radius: 10px;
     cursor: pointer;
-    animation: animate_pulse 1s infinite alternate;
     font-size: 1rem;
 }
-
 input[type=submit]:hover {
     background-color: #29472b;
+    animation: animate_pulse 1s infinite alternate;
 }
 
+
+
+/* footer styles */
+footer.home {
+    text-align: center;
+    padding: 15px 0;
+    color: #f2f2f2;
+    margin-top: 30px;
+    animation: animate_loadpage 1s ease-in;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+
+/* animations */
+@keyframes animate_pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.015);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate_loadpage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

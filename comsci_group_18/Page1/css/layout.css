@@ -1,12 +1,7 @@
-@font-face {
-    font-family: "Monserrat";
-    src: url(../../Main/Fonts/Monserrat/Montserrat-Italic-VariableFont_wght.ttf);
-}
-
 html {
     box-sizing: content-box;
     scroll-behavior: smooth;
-    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main.fave {
@@ -21,7 +16,7 @@ main.fave {
 body.fave {
     color: #edf2f4;
     margin: 25px;
-    font-family: "Monserrat", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #282a3e;
     background: linear-gradient(145deg, #333657 0%, #24273f 100%);
