@@ -58,7 +58,7 @@ nav.fave a {
     text-decoration: none;
     font-size: 17px;
     padding: 14px 16px;
-    margin: 10px 15px;
+    margin: 5px 15px;
     border-radius: 8px;
 }
 nav.fave a:hover {
@@ -80,21 +80,6 @@ nav.fave a:hover {
     flex-direction: column;
     gap: 25px;
     font-family: Arial, Helvetica, sans-serif;
-}
-.contents_title {
-    text-align: center;
-    background: #1f2937;
-    color: white;
-    padding: 18px 0;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.contents_title h2 {
-    margin: 0;
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-    font-weight: 600;
 }
 .contents_btn {
     text-decoration: none;
@@ -171,6 +156,8 @@ nav.fave a:hover {
 }
 .fave h1 {
     font-weight: bolder;
+    text-decoration: overline;
+    font-style: oblique;
 }
 .fave h2, .fave h3{
     font-weight: 1000;
