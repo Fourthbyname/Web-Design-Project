@@ -6,7 +6,7 @@ html {
 }
 
 body.home {
-    background: linear-gradient(135deg, #69605e, #79726b, #332f2a)
+    background: linear-gradient(135deg, #44403f, #44403d, #2c2823)
 }
 
 /* header */
@@ -17,7 +17,7 @@ header.home {
     gap: 25px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;   
-    background-color: #f0f0f0;
+    background-color: rgba(240, 240, 240);
 }
 .home-content {
     display: flex;
