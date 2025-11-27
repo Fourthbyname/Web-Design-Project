@@ -63,7 +63,7 @@ header.home img {
 
 }
 .home.lis {
-    list-style:square;
+    list-style:none;
     padding-left: 15px;
     font-size: 1.3rem;
     font-weight: 1000;
@@ -176,8 +176,9 @@ header.home img {
     width: 160px;
     height: auto;
     border-radius: 12px;
-    border: 10px solid #ffffff;
+    border: 10px solid rgba(0, 0, 0, 0.3);
     object-fit: cover;
+    border-radius: 30px auto;
 }
 
 
@@ -219,8 +220,7 @@ header.home img {
     text-align: center;
     font-size: 1rem;
     color: #000000;
-    margin-bottom: 20
-    px;
+    margin-bottom: 20px;
 }
 
 
