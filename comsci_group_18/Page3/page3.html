@@ -5,25 +5,70 @@
 <head class="Sidney">
   <title class="Sidney">Jam2 - Metal</title>
   <link rel="stylesheet" href="css/layout.css"/>
-  <link rel="icon" type="favicon" href="../images/logo.png">
+  <link rel="icon" type="favicon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
 </head>
 
-<body class="Sidney" bgColor="#151515"> <!-- bgColor taken from https://stackoverflow.com/questions/64051702/how-can-i-set-an-elements-background-color-in-an-html-file#:~:text=You%20can%20use%20inline%20CSS,color%20of%20an%20HTML%20element.-->
+<body class="Sidney" bgColor="#210124"> <!-- bgColor taken from https://stackoverflow.com/questions/64051702/how-can-i-set-an-elements-background-color-in-an-html-file#:~:text=You%20can%20use%20inline%20CSS,color%20of%20an%20HTML%20element.-->
 
-  <div id="navbar">
-    <a href="#">Home</a>
-    <a href="#">Rap</a>
-    <a href="#">Rock</a>
-    <a href="#">Metal</a>
-    <a href="#">R&B</a>
+  <div class="topnav" id="myTopnav">
+    <div class="dropdown">
+      <button class="dropbtn">Afrobeats
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Pre-1990s</a>
+        <a href="#">1990s to Now</a>
+        <a href="#">Top 5 Albums & Artists</a>
+        <a href="#">Recommendations</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Rock
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Pre-1990s</a>
+        <a href="#">1990s to Now</a>
+        <a href="#">Top 5 Albums & Artists</a>
+        <a href="#">Recommendations</a>
+      </div>
+    </div>
+    <div class="dropdown active">
+      <button class="dropbtn">Metal
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="page3.html">Home</a>
+        <a href="subpages/page3_subpage1.html">Pre-1990s</a>
+        <a href="subpages/page3_subpage2.html">1990s to Now</a>
+        <a href="subpages/page3_subpage3.html">Top 5 Albums & Artists</a>
+        <a href="subpages/page3_subpage4.html">Recommendations</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Hip-Hop
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Pre-1990s</a>
+        <a href="#">1990s to Now</a>
+        <a href="#">Top 5 Albums & Artists</a>
+        <a href="#">Recommendations</a>
+      </div>
+    </div>
   </div>
-  
-  <div>
-    <img class="Sidney logo" src="../images/logo.png" alt="The logo for Jam Two" width="15%" height="25%">
+
+  <div class="Sidney">
+    <a href="../Page3/page3.html">
+    <img class="Sidney logo" src="images/logo.png" alt="The logo for Jam Two" width="15%" height="25%">
     <!--logo made on website: sketch.io/sketchpad/-->
+    </a>
   </div>
 
   <section class="Sidney">
@@ -31,8 +76,8 @@
     <img class="Sidney background" src="images/metal_titlebackground.jpg" alt="Background for title" width="100%" height="100%">
   </section>
 
-  <section class="Sidney content">
-    <h2 id="About" class="Sidney">About</h2>
+  <section id="About" class="Sidney content">
+    <h2 class="Sidney">About</h2>
     <p class="Sidney">
       Enjoy hearing instruments take the spotlight? Do you like when people pour their energy into their song and performance? <br>
       Well you've chosen the right genre, because metal is where the music takes your focus and transports you to a soundscape of
@@ -41,10 +86,10 @@
     </p>
   </section>
 
-  <section class="Sidney content">
-    <h2 id="Characteristics" class="Sidney">Characteristics</h2>
+  <section id="Characteristics" class="Sidney content">
+    <h2 class="Sidney">Characteristics</h2>
     <p class="Sidney">
-      The metal genre is known stereotypically as the genre with angry lyrics, loud drums and too much guitar. Those songs exist of
+      The metal genre is known stereotypically as the one with angry lyrics, loud drums and too much guitar. Those songs exist of
       course, but it's more in-depth than that. Metal is a genre that musicians and vocalists alike pour their emotions into by the bucket.
       This is done through vocals that are sung with lulls of sadness, anger or love, complimented by guitar riffs that give each song character 
       and backed with drum beats to tie the whole thing together. The most common instrument in metal is electric guitar, almost acting like a 
@@ -53,35 +98,35 @@
     </p>
   </section>
   
-  <div class="Sidney flex-container">
+  <div id="Links" class="Sidney flex-container">
 
     <div class="Sidney grid-container">
 
       <div class="Sidney">
-       <a class="Sidney container" href="images/metal_pre1990s.jpg">
+       <a class="Sidney container" href="subpages/page3_subpage1.html">
           <div class="Sidney link">Pre-1990s</div>
-          <img class="Sidney link" src="images/metal_pre1990s.jpg" width="250px" height="250px">
+          <img class="Sidney link" src="./images/metal_pre1990s.jpg" width="250px" height="250px">
         </a>
       </div>
 
       <div class="Sidney">
-        <a class="Sidney link" href="images/metal_1990stonow.jpg">
+        <a class="Sidney link" href="subpages/page3_subpage2.html">
           <div class="Sidney link">1990s<br>To Now</div>
-          <img class="Sidney link" src="images/metal_1990stonow.jpg" width="250px" height="250px">
+          <img class="Sidney link" src="./images/metal_1990stonow.jpg" width="250px" height="250px">
         </a>
       </div>
 
       <div class="Sidney">
-        <a class="Sidney" href="images/metal_top5.jpg">
+        <a class="Sidney" href="subpages/page3_subpage3.html">
           <div class="Sidney link">Top 5<br>Albums<br>&<br>Artists</div>
-          <img class="Sidney link" src="images/metal_top5.jpg" width="250px" height="250px">
+          <img class="Sidney link" src="./images/metal_top5.jpg" width="250px" height="250px">
         </a>
      </div>
 
       <div class="Sidney">
-        <a class="Sidney" href="images/metal_recommendations.jpg">
+        <a class="Sidney" href="subpages/page3_subpage4.html">
           <div class="Sidney link" style="font-size: 2em;">What<br>We<br>Recommend</be></div>
-         <img class="Sidney link" src="images/metal_recommendations.jpg" width="250px" height="250px">
+         <img class="Sidney link" src="./images/metal_recommendations.jpg" width="250px" height="250px">
         </a>
       </div>
 
@@ -89,7 +134,7 @@
 
   </div>
 
-  <section class="Sidney content">
+  <section id="Top5" class="Sidney content">
     <h2 class="Sidney">Top 5 Songs Right Now!</h2>
     <div class="Sidney">
       <ul class="Sidney">
@@ -100,10 +145,15 @@
         <li class="Sidney"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5cZqsjVs6MevCnAkasbEOX?utm_source=generator" width="85%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
       </ul>
     </div>
-    <a href="https://www.officialcharts.com/charts/rock-and-metal-singles-chart/">Source - Offical Charts</a>
+  </section>
+
+  <section id="Sources" class="Sidney content">
+    <h2 class="Sidney">Sources</h2>
+    <div class="Sidney" style="text-align: center;">
+      Title Background: <a href="https://redneckrivieranashville.com/news/business-wire/">Redneck Riviera</a>
+    </div>
   </section>
     
-
   <footer class="Home">
     <div class="home">
       <p class="home footer"> &copy; <a href="https://www.dcu.ie"> Dublin City University 2025-2026</a> &VerticalBar;
@@ -114,6 +164,6 @@
       </p>
     </div>
   </footer>
-  
-</body>
 
+</body>
+</html>
